@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script  src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 <body>
     <nav class="navbar">
@@ -32,18 +35,113 @@
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
-                <div class="text-1">Développeur front-end</div>
+                <div class="text-2">Développeur front-end &</div>
                 <div class="text-2">Integrateur web</div>
+                <a href="#">Contactez moi</a>
             </div>
         </div>
     </section>
 
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos cupiditate ratione corporis itaque ipsa minima veniam est reiciendis, nisi molestias exercitationem, eveniet architecto ut quasi? Quia illum tempora adipisci laborum!
-    Alias doloribus voluptates nostrum repudiandae modi! Ratione quae, esse ipsa cupiditate sit veniam explicabo perspiciatis iusto quam pariatur saepe eius libero minus dolor inventore. Cumque illo omnis quae itaque ad?
-    Cumque perferendis explicabo nemo eos aspernatur asperiores quos nam, tenetur sequi perspiciatis odio quam repudiandae at aperiam, distinctio corporis accusantium fuga, qui maxime dicta veritatis esse odit. Itaque, repudiandae tenetur.
-    Corporis ab tempora reprehenderit fuga at debitis magnam voluptates eos placeat odio! Est cupiditate laudantium minima ex dolore, delectus iure, fugiat excepturi, aliquam impedit facilis. Officiis tempore quos deserunt atque?
-    Quis voluptas consequuntur non a magni? Distinctio esse quam labore quae! Harum qui eveniet, nulla aliquam voluptates sunt in accusantium ducimus unde dolores praesentium pariatur similique quam ipsam dolor maiores!
-    Qui ullam eos autem delectus quas fugiat. Deserunt vitae praesentium sit sequi hic maxime aspernatur voluptatum exercitationem, porro ab, quisquam nostrum? Quas nesciunt perspiciatis architecto deleniti eum maxime accusantium. Cupiditate.</p>
+    <!-- about section start -->
+
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">A propos</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="images/profil-picture.png" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">Bonjour je m'appel Maxime et je suis <span class="typing-2">Développeur front-end & integrateur web</span></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
+                    <a href="#">Télécharger le CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio section start -->
+
+    <section class="portfolio" id="portfolio">
+        <div class="max-width">
+            <h2 class="title">Portfolio</h2>
+            <div class="portfolio-content">
+                <div class="card">
+                    <div id="ex1" class="modal">
+                        <img src="images/todolist screenshot.png" alt=""width="800px"height="600px">
+                        <p>Thanks for clicking. That felt good.</p>
+                        <a class ="link-github"href="https://github.com/Maxime-Francois/todolist-js" target="_blank">code</a>
+                        <a href="#" rel="modal:close">Close</a>
+                      </div>
+                    <div class="box">
+                        <div class="text">Todolist</div>
+                        <img class="img-fluid" src="images/todolist screenshot.png" alt="image Todolist"width="300px"height="200px"/>
+                    </div>
+                        <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
+                    </div>
+                <div class="card">
+                    <div id="ex1" class="modal">
+                        <img src="images/snake-screenshot.png" alt=""width="800px"height="600px">
+                        <p>Thanks for clicking. That felt good.</p>
+                        <a class ="link-github"href="https://github.com/Maxime-Francois/todolist-js" target="_blank">code</a>
+                        <a href="#" rel="modal:close">Close</a>
+                      </div>
+                    <div class="box">
+                        
+                        <div class="text">Jeux snake JS</div>
+                        <img class="img-fluid" src="images/snake-screenshot.png" alt="image Todolist"width="300px"height="200px"/>
+                    </div>
+                    <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
+                </div>
+                
+                <div class="card">
+                    <div id="ex1" class="modal">
+                        <img src="images/screenshot dinodico.png" alt=""width="800px"height="600px">
+                        <p>Thanks for clicking. That felt good.</p>
+                        <a class ="link-github"href="https://github.com/Maxime-Francois/todolist-js" target="_blank">code</a>
+                        <a href="#" rel="modal:close">Close</a>
+                      </div>
+                    <div class="box">
+                        
+                        <div class="text">Dinodico</div>
+                        <img class="img-fluid" src="images/screenshot dinodico.png" alt="image Todolist"width="300px"height="200px"/>
+                    </div>
+                    <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
+                </div>
+                <div class="card">
+                    <div id="ex1" class="modal">
+                        <img src="images/screenshot ip-adress-tracker.png" alt=""width="800px"height="600px">
+                        <p>Thanks for clicking. That felt good.</p>
+                        <a class ="link-github"href="https://github.com/Maxime-Francois/todolist-js" target="_blank">code</a>
+                        <a href="#" rel="modal:close">Close</a>
+                      </div>
+                    <div class="box">
+                        
+                        <div class="text">IP adress tracker</div>
+                        <img class="img-fluid" src="images/screenshot ip-adress-tracker.png" alt="image Todolist"width="300px"height="200px"/>
+                    </div>
+                    <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
+                </div>
+                <div class="card">
+                    <div id="ex1" class="modal">
+                        <img src="images/screenshot kop'in.png" alt=""width="800px"height="600px">
+                        <p>Thanks for clicking. That felt good.</p>
+                        <a class ="link-github"href="https://github.com/Maxime-Francois/todolist-js" target="_blank">code</a>
+                        <a href="#" rel="modal:close">Close</a>
+                      </div>
+                    <div class="box">
+                        
+                        <div class="text">Kop'in</div>
+                        <img class="img-fluid" src="images/screenshot kop'in.png" alt="image Todolist"width="300px"height="200px"/>
+                    </div>
+                    <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
+                </div>
+               </div>
+            </div>
+        </div>
+    </section>
+    
+    
     <script src="script.js"></script>
 </body>
 </html>
