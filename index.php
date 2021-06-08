@@ -11,19 +11,23 @@
     <script  src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
     
 </head>
 <body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
     <!-- navbar -->
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">Maxime<span>François</span></a></div>
             <ul class="menu">
-                <li><a href="#">Acceuil</a></li>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Compétences</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Acceuil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
                 
             </ul>
             <div class="menu-btn">
@@ -39,7 +43,7 @@
             <div class="home-content">
                 <div class="text-2">Développeur front-end &</div>
                 <div class="text-2">Integrateur web</div>
-                <a href="#">Contactez moi</a>
+                <a href="#contact">Contactez moi</a>
             </div>
         </div>
     </section>
@@ -55,8 +59,19 @@
                 </div>
                 <div class="column right">
                     <div class="text">Bonjour je m'appel Maxime et je suis <span class="typing-2">Développeur front-end & integrateur web</span></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
-                    <a href="#">Télécharger le CV</a>
+                    <p>Passionné de technologies je me suis mis au développement web en janvier 2020 sur Openclassroom j’ai ensuite commencé une formation intensive en juillet 2020 de développeur web et web mobile de niveau bac+2 chez O ´Clock, depuis décembre 2020 je constitue différents projets pour mon portfolio 
+
+                        Accessible sur mon Github ci-dessous
+                        
+                        Durant cette formation j’ai acquis.
+                        
+                        des compétences techniques et plusieurs langages : HTML5/CSS3 , Javascript ,php , Mysql, mobile  Responsive design , semantic UI , API rest.
+                        Des methodes de travail : agile ,scrum , crud. Des framework : bootstrap ,lumen, jQuery.
+                        Je suis actuellement en recherche d’un poste, stage, alternance de développeur web ou intégrateur
+                        ou tout simplement projets a réaliser sur mesure 
+                        Je suis disponible et joignable au: 0768602888 ou par mail : maximefrancois92@gmail.com</p>
+                    <a href="CV MAXIME FRANCOIS 02-2021 dev.pdf" download>Télécharger le CV</a>
+                    <a href="https://github.com/Maxime-Francois" target="_blank">Github<i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
@@ -72,9 +87,9 @@
                     <div class="card">
                         <div id="ex1" class="modal">
                             <img src="images/todolist screenshot.png" alt=""width="800px"height="600px">
-                            <p>Thanks for clicking. That felt good.</p>
-                            <a class ="link-github"href="https://github.com/Maxime-Francois/todolist-js" target="_blank">code</a>
-                            <a href="#" rel="modal:close">Close</a>
+                            <p class="description">application permettant de lister des taches</p>
+                            <a class ="link-github"href="https://github.com/Maxime-Francois/todolist-js" target="_blank">Code<i class="fab fa-github"></i></a>
+                            <a href="#" class="button-close" rel="modal:close">fermer</a>
                         </div>
                         <div class="box">
                             <a href="#ex1" rel="modal:open">
@@ -87,9 +102,9 @@
                     <div class="card">
                         <div id="ex2" class="modal">
                             <img src="images/snake-screenshot.png" alt=""width="800px"height="600px">
-                            <p>Thanks for clicking. That felt good.</p>
-                            <a class ="link-github"href="https://github.com/Maxime-Francois/snake-js" target="_blank">code</a>
-                            <a href="#" rel="modal:close">Close</a>
+                            <p class="description">jeux snake</p>
+                            <a class ="link-github"href="https://github.com/Maxime-Francois/snake-js" target="_blank">Code<i class="fab fa-github"></i></a>
+                            <a href="#" class="button-close" rel="modal:close">fermer</a>
                         </div>
                         <div class="box">
                             <a href="#ex2" rel="modal:open">
@@ -103,9 +118,9 @@
                     <div class="card">
                         <div id="ex3" class="modal">
                             <img src="images/screenshot dinodico.png" alt=""width="800px"height="600px">
-                            <p>Thanks for clicking. That felt good.</p>
-                            <a class ="link-github"href="https://github.com/Maxime-Francois/dinodico" target="_blank">code</a>
-                            <a href="#" rel="modal:close">Close</a>
+                            <p class="description">site informatif et pédagogique sur les dinosaures</p>
+                            <a class ="link-github"href="https://github.com/Maxime-Francois/dinodico" target="_blank">Code<i class="fab fa-github"></i></a>
+                            <a href="#" class="button-close" rel="modal:close">fermer</a>
                         </div>
                         <div class="box">
                             <a href="#ex3" rel="modal:open">
@@ -118,9 +133,9 @@
                     <div class="card">
                         <div id="ex4" class="modal">
                             <img src="images/screenshot ip-adress-tracker.png" alt=""width="800px"height="600px">
-                            <p>Thanks for clicking. That felt good.</p>
-                            <a class ="link-github"href="https://github.com/Maxime-Francois/ip-address-tracker" target="_blank">code</a>
-                            <a href="#" rel="modal:close">Close</a>
+                            <p class="description">intégration site adress tracker sur  <a href="https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0" target="_blank">frontend mentor</a></p>
+                            <a class ="link-github"href="https://github.com/Maxime-Francois/ip-address-tracker" target="_blank">Code<i class="fab fa-github"></i></a>
+                            <a href="#" class="button-close" rel="modal:close">fermer</a>
                         </div>
                         <div class="box">
                             <a href="#ex4" rel="modal:open">
@@ -133,9 +148,9 @@
                     <div class="card">
                         <div id="ex5" class="modal">
                             <img src="images/screenshot kop'in.png" alt=""width="800px"height="600px">
-                            <p>Thanks for clicking. That felt good.</p>
-                            <a class ="link-github"href="https://github.com/Maxime-Francois/kop-in" target="_blank">code</a>
-                            <a href="#" rel="modal:close">Close</a>
+                            <p class="description">site vitrine magasin pret-a-porter pour femme</p>
+                            <a class ="link-github"href="https://github.com/Maxime-Francois/kop-in" target="_blank">Code<i class="fab fa-github"></i></a>
+                            <a href="#" class="button-close" rel="modal:close">fermer</a>
                         </div>
                         <div class="box">
                             <a href="#ex5" rel="modal:open">
@@ -144,8 +159,8 @@
                             </a>
                         </div>
                     </div>
-    <!-- card-6 ip adress tracker -->
-                    <div class="card">
+    <!-- card-6 ip videogames-manager -->
+                    <!-- <div class="card">
                         <div id="ex6" class="modal">
                             <img src="images/screenshot ip-adress-tracker.png" alt=""width="800px"height="600px">
                             <p>Thanks for clicking. That felt good.</p>
@@ -158,7 +173,7 @@
                             <img class="img-fluid" src="images/screenshot ip-adress-tracker.png" alt="image ip-adress-tracker"width="300px"height="200px"/>
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
     </section>
@@ -171,7 +186,7 @@
             <div class="skills-content">
                 <div class="column left">
                     <div class="text">Mes compétences créatives & éxperiences</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto perspiciatis fuga temporibus necessitatibus iusto, iure laboriosam nisi placeat corporis ad ab mollitia consectetur dolor voluptatibus sunt deserunt quisquam minima officia consequuntur veritatis exercitationem! Fugit magni similique iure placeat itaque officia, sapiente, voluptatem perspiciatis maxime et quod culpa, minus impedit est adipisci suscipit nobis perferendis amet unde atque nihil fuga quia?</p>
+                    <p>J'ai acquis la plupart de mes compétences en développement web a l'école 0'clock et découvert une appétance pour le front-end, j'aime le coté graphique d'un site ou d'une application. J'essaye de m'améliorer actuellement au langage JavaScript et je découvre les différents framework front-end tel que React ou encore Vue.JS  </p>
                     <a href="#">Lire plus</a>
                 </div>
                 <div class="column right">
@@ -224,7 +239,7 @@
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Get in Touch</div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
+                    <p>N'hésitez pas a m'envoyer un mail ou un message sur le site pour un projet a réaliser sur mesure ou un recrutement pour un poste, stage ou alternance</p>
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
@@ -251,20 +266,20 @@
                 </div>
                 <div class="column right">
                     <div class="text">envoyez moi un message</div>
-                    <form class="contact-form" action="#" method="POST">
+                    <form class="contact-form" action="message.php" method="POST">
                         <div class="fields">
                             <div class="field name">
                                 <input type="text" class="fullname" placeholder="Nom">
                             </div>
                             <div class="field email">
-                                <input type="text" class="email-input" placeholder="Email">
+                                <input type="text" name="email" class="email-input" placeholder="Email">
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" class="subject" placeholder="Sujet">
+                            <input type="text" name="subject" class="subject" placeholder="Sujet">
                         </div>
                         <div class="field textarea">
-                            <textarea class="message" cols="30" rows="10" placeholder="Message.."></textarea>
+                            <textarea class="message" name="message" cols="30" rows="10" placeholder="Message.."></textarea>
                         </div>
                         <div class="button-area">
                             <button class="send-msg" type="submit" name="send">envoyer</button>
@@ -275,6 +290,10 @@
             </div>
         </div>
     </section>
+    
+    <footer>
+
+    </footer>
     
     
     <script src="script.js"></script>
